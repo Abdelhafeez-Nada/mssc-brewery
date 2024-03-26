@@ -20,6 +20,7 @@ public class BeerController {
 
     private final BeerService beerService;
 
+    // 4bd55e59-c9c9-4494-b9b1-dbd9fd34807e
     @GetMapping("/{beerId}")
     public ResponseEntity<BeerDto> findById(@PathVariable UUID beerId) {
         return new ResponseEntity<BeerDto>(beerService.getBeerById(beerId), HttpStatus.OK);
