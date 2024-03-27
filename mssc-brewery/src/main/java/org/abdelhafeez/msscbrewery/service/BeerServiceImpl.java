@@ -3,7 +3,9 @@ package org.abdelhafeez.msscbrewery.service;
 import java.util.UUID;
 
 import org.abdelhafeez.msscbrewery.web.dto.BeerDto;
+import org.springframework.stereotype.Service;
 
+@Service
 public class BeerServiceImpl implements BeerService {
 
     @Override
